@@ -32,14 +32,13 @@
 
 package com.mopub.simpleadsdemo;
 
-import com.mopub.mobileads.MoPubConversionTracker;
-import com.mopub.mobileads.MoPubActivity;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TabHost;
 import android.widget.Toast;
+import com.mopub.mobileads.MoPubActivity;
+import com.mopub.mobileads.MoPubConversionTracker;
 
 public class SimpleAdsDemo extends TabActivity {
     private final int   INTERSTITIAL_AD_REQUEST = 0;

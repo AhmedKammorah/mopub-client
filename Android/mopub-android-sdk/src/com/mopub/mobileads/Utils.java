@@ -32,14 +32,15 @@
 
 package com.mopub.mobileads;
 
+import org.json.JSONObject;
+import org.json.JSONTokener;
+
+import java.lang.reflect.Method;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-
-import org.json.JSONObject;
-import org.json.JSONTokener;
 
 public class Utils {
     private Utils() {}
@@ -74,5 +75,11 @@ public class Utils {
         }
         
         return jsonMap;
+    }
+
+    public static void invokeInstanceMethod(Object instance, String methodName) throws Exception {
+        Method method = instance.getClass().getDeclaredMethod(methodName);
+        method.setAccessible(true);
+        method.invoke(instance);
     }
 }

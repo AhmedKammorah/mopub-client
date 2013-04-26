@@ -32,10 +32,9 @@
 
 package com.mopub.mobileads;
 
-import com.mopub.mobileads.MraidView.ViewState;
-
 import android.view.Gravity;
 import android.widget.FrameLayout;
+import com.mopub.mobileads.MraidView.ViewState;
 
 public class MraidAdapter extends BaseAdapter {
     

@@ -1,15 +1,13 @@
 package com.mopub.mobileads;
 
-import java.lang.reflect.Constructor;
-import java.util.HashMap;
-import java.util.Map;
-
-import com.mopub.mobileads.CustomEventBanner;
-import com.mopub.mobileads.CustomEventBanner.CustomEventBannerListener;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
+import com.mopub.mobileads.CustomEventBanner.CustomEventBannerListener;
+
+import java.lang.reflect.Constructor;
+import java.util.HashMap;
+import java.util.Map;
 
 public class CustomEventBannerAdapter extends BaseAdapter implements CustomEventBannerListener {
     private Context mContext;

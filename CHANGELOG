@@ -1,5 +1,11 @@
 # MoPub Changelog #
 
+Version 1.12 (April 26, 2013)
+o iOS: iOS repository moved to https://github.com/mopub/mopub-ios-sdk
+o Android: Chartboost custom event now automatically parses server data
+o Android: Added support for Millennial Media SDK 5.0
+o Android: Initial support for data signals (connectivity and carrier)
+
 Version 1.11 (March 13, 2013)
 o iOS: Fixed issue causing a crash for legacy custom event methods
 o iOS: Fixed issue causing refresh timer to not be scheduled properly on connection errors

@@ -1,14 +1,12 @@
 package com.mopub.mobileads;
 
+import android.content.Context;
+import android.util.Log;
+import com.mopub.mobileads.CustomEventInterstitial.CustomEventInterstitialListener;
+
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
-
-import com.mopub.mobileads.CustomEventInterstitial;
-import com.mopub.mobileads.CustomEventInterstitial.CustomEventInterstitialListener;
-
-import android.content.Context;
-import android.util.Log;
 
 public class CustomEventInterstitialAdapter extends BaseInterstitialAdapter implements CustomEventInterstitialListener {
     private CustomEventInterstitial mCustomEventInterstitial;

@@ -1,9 +1,5 @@
 package com.mopub.simpleadsdemo;
 
-import com.mopub.mobileads.MoPubErrorCode;
-import com.mopub.mobileads.MoPubView;
-import com.mopub.mobileads.MoPubView.BannerAdListener;
-
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -13,6 +9,9 @@ import android.view.View.OnClickListener;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import com.mopub.mobileads.MoPubErrorCode;
+import com.mopub.mobileads.MoPubView;
+import com.mopub.mobileads.MoPubView.BannerAdListener;
 
 public class BannersTab extends Activity implements BannerAdListener {
     private EditText mSearchText;

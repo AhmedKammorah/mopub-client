@@ -1,11 +1,10 @@
 package com.mopub.mobileads;
 
+import android.view.View;
 import com.mopub.mobileads.MraidView.ExpansionStyle;
 import com.mopub.mobileads.MraidView.NativeCloseButtonStyle;
 import com.mopub.mobileads.MraidView.PlacementType;
 import com.mopub.mobileads.MraidView.ViewState;
-
-import android.view.View;
 
 public class MraidActivity extends BaseActivity {    
     private MraidView mAdView;

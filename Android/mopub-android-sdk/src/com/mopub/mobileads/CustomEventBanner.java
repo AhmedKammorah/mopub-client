@@ -1,9 +1,9 @@
 package com.mopub.mobileads;
 
-import java.util.Map;
-
 import android.content.Context;
 import android.view.View;
+
+import java.util.Map;
 
 /*
  * CustomEventBanner is a base class for custom events that support banners. By implementing

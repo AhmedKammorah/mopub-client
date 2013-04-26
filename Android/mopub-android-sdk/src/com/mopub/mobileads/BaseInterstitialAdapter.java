@@ -1,9 +1,9 @@
 package com.mopub.mobileads;
 
+import android.util.Log;
+
 import java.lang.reflect.Constructor;
 import java.util.HashMap;
-
-import android.util.Log;
 
 public abstract class BaseInterstitialAdapter {
 

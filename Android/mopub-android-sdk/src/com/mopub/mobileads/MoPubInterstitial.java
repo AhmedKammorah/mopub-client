@@ -32,18 +32,17 @@
 
 package com.mopub.mobileads;
 
-import java.util.Map;
-
-import com.mopub.mobileads.BaseInterstitialAdapter.BaseInterstitialAdapterListener;
-import com.mopub.mobileads.MoPubView.LocationAwareness;
-import com.mopub.mobileads.MoPubView.BannerAdListener;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.location.Location;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
+import com.mopub.mobileads.BaseInterstitialAdapter.BaseInterstitialAdapterListener;
+import com.mopub.mobileads.MoPubView.BannerAdListener;
+import com.mopub.mobileads.MoPubView.LocationAwareness;
+
+import java.util.Map;
 
 public class MoPubInterstitial {
     

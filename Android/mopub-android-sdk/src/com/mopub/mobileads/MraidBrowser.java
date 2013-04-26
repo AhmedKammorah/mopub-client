@@ -11,15 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.webkit.CookieSyncManager;
-import android.webkit.WebChromeClient;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+import android.webkit.*;
 import android.widget.ImageButton;
 import android.widget.Toast;
-
-import com.mopub.mobileads.R;
 
 public class MraidBrowser extends Activity {
     

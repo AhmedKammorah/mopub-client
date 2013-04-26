@@ -1,8 +1,8 @@
 package com.mopub.mobileads;
 
-import java.util.Map;
-
 import android.content.Context;
+
+import java.util.Map;
 
 /*
  * CustomEventInterstitial is a base class for custom events that support interstitials. By

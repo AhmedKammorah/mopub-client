@@ -34,16 +34,10 @@
 
 package com.mopub.mobileads;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.lang.ref.WeakReference;
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.Executor;
-
+import android.app.Activity;
+import android.os.AsyncTask;
+import android.os.Build;
+import android.util.Log;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -56,10 +50,15 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
-import android.app.Activity;
-import android.os.AsyncTask;
-import android.os.Build;
-import android.util.Log;
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.ref.WeakReference;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.Executor;
 
 /*
  * AdFetcher is a delegate of an AdView that handles loading ad data over a
@@ -231,7 +230,7 @@ public class AdFetcher {
                 return null;
             }
 
-            mAdView.configureAdViewUsingHeadersFromHttpResponse(response);
+            mAdView.configureUsingHttpResponse(response);
 
             // Ensure that the ad is not warming up.
             Header warmupHeader = response.getFirstHeader("X-Warmup");

@@ -1,9 +1,5 @@
 package com.mopub.simpleadsdemo;
 
-import com.mopub.mobileads.MoPubErrorCode;
-import com.mopub.mobileads.MoPubInterstitial;
-import com.mopub.mobileads.MoPubInterstitial.InterstitialAdListener;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +7,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
+import com.mopub.mobileads.MoPubErrorCode;
+import com.mopub.mobileads.MoPubInterstitial;
+import com.mopub.mobileads.MoPubInterstitial.InterstitialAdListener;
 
 public class InterstitialsTab extends Activity implements InterstitialAdListener {
 
